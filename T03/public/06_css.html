@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자 연습</title>
+<style>
+
+div i {font-weight:bold;}
+
+div ~ p {color:blue;}
+
+.mylist:nth-child(2){background-color:yellow;}
+
+#p3::first-Letter {text-transform: uppercase; font-size:40px; 
+	font-weight:bold; background-color:yellow;}
+
+#myol > li {color:green; }
+
+
+</style>
+</head>
+<body>
+<h3>CSS 선택자 연습</h3>
+<ol>
+<li> div내의 모든 후손 i 태그(요소)의 글자를 진하게 하시오.
+<li> div 바로 다음에 오는 인접한 형제 요소 p 태그를 선택하여 글자색을 파란색으로 설정하시오.
+<li> class="mylist"인 태그 중에서 두번째 태그 배경색을 노란색으로 지정하시오.
+<li> 맨 마지막의 p 태그에 대한 id를 p3으로 정의하고,
+	 이 요소내의 첫 문자를 대문자로, 진하게, 글자크기 40px, 배경색을 노란색로 선언하시오.
+<li> id="myol"인 요소의 직계 자식 요소들 li를 선택하고, 글자색을 green으로 선언하시오. 
+</ol>
+<div>
+	<p>div 내의 <i>1번째</i> p요소</p>
+	<p>div 내의 <i>2번째</i> p요소</p>
+	<p>div 내의 <i>3번째</i> p요소</p>
+</div>
+<p>div 다음에 오는 <strong>1번째</strong> p 요소</p>
+<p>div 다음에 오는 <em>2번째</em> p 요소</p>
+<div>
+<ol id="myol">
+	<li class="mylist">첫번째 li</li>
+	<li class="mylist">두번째 li</li>
+	<li class="mylist">세번째 li</li>
+	<li class="mylist">네번째 li</li>
+</ol>
+</div>
+<p id="p3">div 다음에 오는 <b>1번째</b> p 요소</p>
+</body>
+</html>

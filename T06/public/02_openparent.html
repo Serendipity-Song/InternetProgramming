@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>새창에서 얻은 값 출력하기</title>
+<script>
+/*[참고] 보안상의 이유로 크롬에서는 local 파일시스템상에서 데이터를 교환할 수 없음.
+ *       따라서, 크롬에서 테스트할 경우 Dynamic Web Project를 생성하고, 
+               웹 서버를 실행시켜서 테스트 해야함.
+ *       local에서 테스트하려면 인터넷 익스플로러 11 상에서 테스트해야함.
+ */
+/*
+ * 1. 주소 검색 버튼을 클릭하면, 02_popup.html 파일을 새로운 브라우저 창에 가로 300, 세로 200의
+ 	크기로, 출력하시오.
+ */
+
+ 
+ function addrWindow() {
+	window.open("o2_popup.html","address", "width=300, height=200, toolbar=no");
+}
+ 
+ 
+</script>
+</head>
+<body>
+<form name="frm">
+<input type="text" size="30" name="addr" id="addr">
+<input type="button" value="주소검색" onclick="addrWindow()">
+</form>
+</body>
+</html>

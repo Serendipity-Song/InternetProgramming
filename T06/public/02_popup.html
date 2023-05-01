@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주소 선택</title>
+<script>
+/*
+ * 1. 링크를 선택하면, 선택된 문자열을 id="addr"인 입력 상자에 출력하고,
+ 		포커스를 이동시키시오.
+ */
+function myaddr(obj) {
+	document.getElementById("addr").value = obj.innerHTML;
+	document.getElementById("addr").focus();
+}
+
+ 
+
+/*
+ * 2. 확인 버튼을 클릭하면, id="addr"에 입력된 문자열을 이 팝업 윈도우를 호출한 부모 윈도우(브라우저)의
+ 		id="addr"인 입력 상자에 출력하시오.
+ 		[힌트] 호출한 부모 윈도우는 opener 객체를 통해 접근할 수 있다.
+ */
+function toCalledwindow() {
+	var addValue = document.getElementById("addr").value;
+	window.opener.document.getElementById("addr").value = addrValue;
+	self.close();
+}
+ 
+ 
+ 
+</script>
+</head>
+<body>
+<a href="#" onclick="myaddr(this)">인천 미추홀구 용현동</a><br>
+<a href="#" onclick="myaddr(this)">인천 미추홀구 인하로 100</a><br>
+<a href="#"  onclick="myaddr(this)">인천 미추홀구 용현동 기숙사</a><br>
+<br>
+<p>선택 주소</p>
+<input type="text" id="addr" size="30">
+<p align="right"><input type="button" value="확인" onclick="toCalledWindow()">
+</body>
+</html>

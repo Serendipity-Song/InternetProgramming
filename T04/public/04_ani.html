@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform과 animate 연습</title>
+<style>
+/*
+1. id가 animated_div를 선택하여 크기를 가로 80px, 세로 50px로 선언하시오.
+2. top-left-right-bottom 각 모서리를 5px 길이로 둥글게 처리하시오.
+3. 글자색은 흰색으로, 배경색은 자유롭게 선언하고, 폰트의 굵기는 진하게, 20px 크기로 선언하시오.
+4. 안쪽 여백은 10px로, 위쪽 바깥 여백은 30px로 선언하시오.
+5. 선언한 animated_div keyframe이 5초동안 2회 수행 될 수 있도록 선언하시오.
+*/
+
+
+#animated_div {
+	padding: 10px;
+	padding-top: 30px;
+	color: white;
+	font-weight:bold;
+	font-size:20px;
+	background-color:green;
+	border: 2px solid white;
+	width: 80px;
+	height: 50px;
+	position:relative;
+	animation:animated_div 5s 2;
+}
+
+@keyframes animated_div {
+ 	0% {transform:rotate(0deg); left:0px;}
+ 	25% {transform:rotate(20deg); left:0px;}
+ 	50% {transform:rotate(0deg); left:500px;}
+ 	75% {transform:rotate(0deg); left:500px;
+ 		background-color:yellow;}
+ 	100% {transform:rotate(-360deg); left:0px;}
+ }
+
+
+/*
+6. animated_div 라는 이름을 가지는 keyframes를 선언하시오.
+   left 0px인 지점에서 20도정도 회전시키고, left 500px 지점으로 이동시키시오.
+      다시, left 0px인 지점으로 되돌아 오면서 360도 회선시키면서 이동시키시오.
+*/
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="animated_div">CSS3</div>
+</body>
+</html>

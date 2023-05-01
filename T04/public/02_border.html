@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border와 opacity</title>
+<style>
+/*
+1. div 태그를 선택하여, 가로 150px, 세로 100px 크기로 box를 선언하고,
+   div 태그 옆에 div 태그들이 나열되도록 display를 선언하시오.
+*/   
+
+
+div {
+	width:150px;
+	height:100px;
+	display:inline-block;
+	}
+
+
+/* 
+2. container1 클래스의 경계선 두깨를 10px, 실선(solid), 녹색으로 선언하시오.
+ */
+
+.container1{
+	border:10px solid green;
+}
+
+
+
+/* 
+3. container2 클래스의 경계선 두깨를 15px, outset, 진한 회색으로 선언하시오.
+ */
+
+.container2{
+	border : 15px outset gray;
+}
+
+
+
+/*
+4. container3 클래스의 경계선 두깨를 20px, 이중 실선(double), 파란색으로 선언하시오.
+*/
+
+
+.container3{
+	border: 20px double blue;
+}
+
+
+/*
+5. 클래스 image를 선택하고, 이미지의 크기가 div 박스 영역 내의 전체 크기가 되도록 선언하시오.
+*/ 
+
+.image {
+  width: 100%; height: 100%;
+}
+
+
+
+/*
+6. image 클래스 영역위에 마우스를 올리면, 투명도가 0.5가 되도록 선언하시오.
+*/
+
+
+.image:hover{
+	opacity:0.5;}
+
+
+
+</style>
+</head>
+<body>
+<div class="container1">
+	<img class="image" src="images/nature1.png" title="nature1">
+</div>
+<div class="container2">
+	<img class="image" src="images/nature2.png">
+</div>
+<div class="container3">
+	<img class="image" src="images/nature3.png">
+</div>
+</body>
+</html>

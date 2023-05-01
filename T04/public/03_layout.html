@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃 배치와 메뉴 모양, 링크 모양 선언하기</title>
+<style>
+/*
+화면에 제시된 모양과 같이, 다음의 html5 코드가 출력되도록 스타일을 정의하시오.
+1. <header>태그 영역은 화면 상단에 출력하고, 배경색을 분홍색, 글자는 가운데 정렬하시오.
+2. <nav> 태그 영역은 화면 왼쪽에 출력하고, <ul> 태그의 각 메뉴를 제시된 화면과 같이 출력하시오.
+3. <ul>태그 내의 <a> 태그에 대하여 링크 밑줄을 제거하고, 글자색을 흰색으로 선언하시오.
+     또한, 마무스를 올리면, 배경색이 변경되도록 선언하시오.
+   (배경색상은 www.w3schools.com 사이트의 color picker를 이용합니다.)
+4. <section> 태그 영역은 오른쪽에 출력하고, 배경색을 노란색으로 선언하시오.
+5. <footer> 태그 영역은 화면 아래쪽에 출력하고, 배경색은 보라색, 글자색은 흰색으로 하고, 가운데 정렬하시오.
+*/
+body {
+    background-color: #efe5d0;
+    font-family: Arial, "Trebuchet MS", sans-serif;
+    margin: 0px;
+}
+
+header{
+	background:pink;
+	color:black;
+	text-align:center;
+	margin:0px;
+	padding:5px;
+}
+
+nav {
+	display:table-cell;
+	background-color:orange;
+}
+
+section{
+	background-color:yellow;
+	width:100%
+	margin 0px;
+	padding: 15px;
+}
+
+footer{
+	background-color:red;
+	color:white;
+	padding:10px;
+	text-align:center;
+	font-size:90%;	
+}
+
+
+.menu {
+	list-style-type:none;
+	padding-left:0px;
+	
+}
+
+.menu li {
+	background-color:yellow;
+	margin-bottom:10px;
+	color:white;
+	padding:10px;
+	width:100%;
+
+}
+
+.menu li:hover{
+	background-color:green;
+
+}
+
+
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<header>
+    <h1>My Blog Page</h1>
+</header>
+<nav>
+    <h1>Links</h1>
+    <ul class="menu">
+        <li><a  href="http://www.w3c.org/">W3C</a></li>
+        <li><a href="http://developer.mozilla.org/">MOZILLA</a></li>
+        <li><a href="http://htmldog.com/guides/">HTML Dogs</a></li>
+    </ul>
+    <div>
+        <img width="85" height="85"  src="images/gildong.png"  alt="홍길동" />
+        <div>홍길동</div>
+    </div>
+</nav>
+<section id="main">
+    <article>
+        <h1>Semantic Tags</h1>
+        <p>
+            시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다.
+        </p>
+    </article>
+    <article>
+        <h1>div와 span</h1>
+        <p>
+            div은 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.
+            span 요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다. 
+        </p>
+    </article>
+</section>
+<footer>Copyright &copy; 2022 GilDong Hong</footer>
+</body>
+</html>

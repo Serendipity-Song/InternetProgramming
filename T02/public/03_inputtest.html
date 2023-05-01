@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>input form 예제</title>
+
+	
+</head>
+
+<body>
+
+<form action="#" method="post">
+<table border=1">
+<tr>
+	<th>id</th>
+	<th> <input type="text" name="id"><br></th>
+</tr>
+<tr>
+	<th>성명</th>
+	<th><input type="text" name="name"></th>
+</tr>
+<tr>
+	<th>전자우편 </th>
+	<th><input type="email" name="email"></th>
+</tr>
+<tr>
+	<th>암호 </th>
+	<th><input type="password" name="pwd" size="10" maxlength="10"></th>
+</tr>
+<tr>
+	<th>성별 </th>
+	<th> <input type="radio" name="남성"> 남 <input type="radio" name="여성"> 여</th>
+</tr>
+<tr>
+	<th>직업</th>
+	<th><select name="컴퓨터기사">
+		<option value="컴퓨터기사">컴퓨터 기사</option>
+		<option value="프로그래머">프로그래머</option>
+		<option value="개발자">웹 개발자</option>
+	</select></th>
+</tr>
+<tr>
+	<th>내용</th>
+	<th><textarea cols="20" rows="5" name="내용">가로 20자, 세로 5줄 길이로 설정.</textarea></th>
+</tr>
+<tr>
+	<td colspan=2 style="text-align:center"> 
+	<input type="submit" value="    가입    " > <input type="reset" value="취     소">
+</tr>
+
+
+<!-- <td colspan=2 syle="text-align:center"> -->
+
+<!--
+한 줄 = tr에 두 칸 th 만들기. 
+<tr>
+	<th></th>
+	
+	<th></th>
+</tr>
+
+두 칸 합치기
+<td colspan=2>
+ -->
+
+	
+</table>
+</form>
+	
+</body>
+</html>

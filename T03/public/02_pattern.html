@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>패턴 예제</title>
+</head>
+<body>
+아래의 입력 양식에 대한, pattern을 부여하세요.
+<form action="#" method="get">
+<fieldset>
+<legend>입력 양식</legend>
+<p>
+전화번호(000-0000-0000) : 
+<input type="text" name="phone" 
+	pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" 
+	title="000-0000-0000">
+</p>
+<p>
+암호(영숫자, 특수문자 @#$%^&amp;* 포함하여 6~20자리) : 
+<input type="text" name="pwd" 
+		pattern="[a-zA-Z0-9@#$%^&*]{6,20}"
+		title="영숫자, 특수문자 @#$%^&* 포함하여 6~20자리)">
+</p>					 
+<input type="submit">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset">
+</fieldset>
+</form>
+</body>
+</html>

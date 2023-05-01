@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+ * 1. 가로(width), 세로(height)를 속성변수로 가지는 객체 Rect를 선언하고,
+		면적을 알아내기 위한 getArea() 멤버 함수를 선언하시오.
+ */
+ function Rect(width, height) {
+	this.width = width;
+	this.height = height;
+	this.getArea = function() {
+		return this.width * this.height;
+	}
+}
+
+ 
+function calArea() {
+	var w = prompt("가로 입력", "");
+	var h = prompt("세로 입력", "");
+	var r = new Rect(w, h);
+	alert("넓이 : " + r.getArea());
+}
+ 
+ 
+
+/*2. 면적 계산하기 버튼을 클릭하면, 가로, 세로를 prompt를 통해 각각 입력 받고,
+ *   Rect 객체를 이용하여 계산된 면적을 alert 경고창에 출력하시오.
+ */
+
+ 
+ 
+ 
+ 
+ </script>
+</head>
+<body>
+<p>
+	<button type="button" onclick="calArea()">면적 계산하기</button>
+</p>
+</body>
+</html>

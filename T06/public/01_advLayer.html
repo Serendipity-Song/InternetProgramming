@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광고 레이어</title>
+<style>
+/*
+1. id="adv"인 요소를 선택하고, 위치 기준을 absolute로 선언하시오.
+	top과 left 위치는 10%로 선언하고, 
+	가로, 세로 크기를 각각 200px, 200px 길이로 선언하고, 배경색을 자유롭게 지정하시오.
+*/
+
+
+/*
+2. id="closeButton"인 버튼 요소의 위치를 설정하시오.
+위치기준을 absolute로 하고, bottom과 right를 각각 10px, 10px로 설정하시오.
+*/
+
+#adv {
+	position : absolute;
+	top : 10%;
+	left : 10%;
+	width : 200px;
+	height : 200px;
+	background-color:yellow;
+}
+
+#closeButton {
+	position : absolute;
+	bottom : 10px;
+	right : 10px;
+}
+
+
+</style>
+
+
+<script>
+/*
+3. 버튼을 클릭하면 id="adv"인 광고 레이어가 보이지 않도록 
+	자바스크립트를 사용하여 스타일을 지정하시오.
+*/
+
+function advClose() {
+	document.getElementById("adv").style.display = "none";
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+<p>자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다.</p>
+<p>이 언어는 웹브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다.</p>
+<div id="adv">
+	<h1>광고 페이지</h1>
+	<button id="closeButton" type="button" onclick="advClose()">닫기</button>
+</div>
+</body>
+</html>
+
+
+

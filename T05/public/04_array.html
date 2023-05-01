@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배열과 이벤트 핸들링</title>
+<script>
+/*색깔 이름을 구성요소로 하는 5개의 array를 선언하고,
+ * 색깔 바꾸기 버튼을 클릭할 때마다, 배경색을 array 구성요소에 있는 색깔들로 변경시키시오.
+   단, body 요소의 배경색을 변경하기 위한 코드는 아래와 같습니다.
+   
+   document.getElementById("mybody").style.backgroundColor = "red";
+ */
+ 
+ 
+var arr = ["red", "orange", "yellow", "green", "blue"];
+ 
+var idx=0;
+function changeColor(){
+	document.getElementById("mybody").style.backgroundColor = arr[idx];	
+	if(idx==arr.lengh-1)
+		idx=0;
+	else
+		++idx;
+}
+
+
+
+
+ 
+ 
+ </script>
+</head>
+<body id="mybody">
+<input type="button" value="색깔 바꾸기" onclick="changeColor()">
+</body>
+</html>

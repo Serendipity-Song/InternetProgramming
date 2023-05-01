@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> 표와 목록 연습 </title>
+</head>
+<body>
+표 만들기
+<ul>
+	<li>다음 표과 같이 출력하기 위한 html 코드를 작성하시오.</li>
+	<li>표의 너비는 600px로 설정하고, 셀 사이의 이중 경계선이 나타나지 않도록 경계선을 설정하시오.</li>
+	<li style="list-style-type:circle">제목은 진하게 가운데 정렬시키고, 배경색은 silver로 설정합니다.</li>
+	<li style="list-style-type:square">표 내부에 표현된 번호는 순서 있는 목록 태그를 사용하여 표시하시오.</li>
+</ul>
+
+<table border="1" style="border-collapse:collapse;width:600px">
+<caption>[표제목 - 검색어 순위]</caption>
+	<tr>
+		<th colspan="2" style="background-color:silver">금주의 인기 검색어</th>
+	</tr>
+	<tr>
+		<td>순위</td>
+		<td>
+			<ol>
+				<li>류현진</li>
+				<li>인터넷프로그래밍</li>
+				<li>JSP</li>
+				<li value="10">HTML</li>
+				<li>JavaScript</li>
+			
+			</ol>
+		
+		</td>
+	</tr>
+
+
+</table>
+
+
+</body>
+</html>

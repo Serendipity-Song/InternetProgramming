@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+
+.myFont {
+  font-family: "궁서체";
+}
+
+#myID {
+	font-family: "궁서체";
+	color: red;
+	font-size:50px;
+	font-weight:bold;
+}
+
+#myshadow{
+	text-align:center;
+	color: green;
+	text-shadow: 3px 3px 5px #666666;
+	
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>이미지 맵</title>
+	<style>
+body {
+  background-color: Black;}
+font {
+color : "white";}
+</style>
+</head>
+<body>
+
+
+<p style="text-align:center">
+<img src="images/kevin1.jpg" usemap="menu">
+<map name="menu">
+	<area shape="rect" coords="152,79,383,120" href="01_multimedia" alt="멀티미디어 연습">
+	<area shape="circle" coords="72,111,70" href="02_table.html" alt="테이블 연습">
+	<area shape="poly" coords="1,2,3,4,5" href="03_inputtest.html">
+</map>
+<p>
+
+
+<p style="color:white">
+
+본문의 배경색을 검은색으로 설정합니다.<br>
+images 경로의 kevin1.jpg 파일을 문단 가운데에 출력하고, 다음과 같이 이미지 영역에 대하여 링크를 설정합니다.<br> 
+-"Kevin's World" 사각형 영역을 클릭하면 01_multimedia.html 파일을 출력합니다.<br>
+-지구 원 영역을 클릭하면 02_table.html" 문서를 출력합니다. <br>
+-사람 영역을 클릭하면 "03_inputtest.html" 문서를 출력합니다.<br> 
+</p>
+
+
+<form action="#" method="get">
+
+<input type="button">
+<input type="checkbox">
+<input type="password">
+<input type="radio">
+<input type="text" name="이름" value="홍길동" size="10" maxlength="8">
+<input type="submit">
+<input type="">
+
+<input type="file" accept="image/jpg, image/gif" name="fileName">
+<input type="submit" value="파일 전송">
+</form>
+
+
+<select multiple size="4" name="component_select">
+	<option selected value="Com1">Component_1</option>
+	<option value="Com2">Component_2</option>
+	<option value="Com3">Component_3</option>
+	<option value="Com4">Component_4</option>
+</select>
+
+<fieldset>
+	<label for="male">Male</label>
+	<input type="radio" name="gender" id="male" value="male">
+</fieldset>
+
+
+<input type="color" name="favcolor">
+<input type="number" name="quantity" min="1" max="5" value="1" step="1">
+<input type="range" name="points" min="0" max="10" value="5">
+
+<input type="url" name="homepage">
+
+
+<input type="text" name="code" pattern="[A-Za-z]{3}" title="영문자3자리">
+
+
+<!-- email  -->
+[a-z0-9,_%+-]+@[a-z0-9._]+\.[a-z]{2,3}$
+
+
+
+</body>
+</html>
